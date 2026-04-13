@@ -77,3 +77,9 @@ li a {
   text-decoration: none;
 }
 
+.nav-logo {
+    height: 45px;       /* Adjust this value to fit your specific nav height */
+    width: auto;        /* Maintains the aspect ratio so it doesn't look squished */
+    vertical-align: middle; /* Aligns the icon with the text links next to it */
+    margin-top: -5px;   /* Optional: Fine-tune the centering if it looks too high/low */
+}
