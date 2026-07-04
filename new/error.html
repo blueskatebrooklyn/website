@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Not Found | Blue Skate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="blueskate.css" />
+</head>
+<body>
+
+<header class="topnav">
+  <div class="brand">
+    <img src="images/BlueSkateIcon.jpg" alt="Blue Skate logo" class="nav-logo" />
+    <span class="brand-name">Blue Skate</span>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="lessons.html">Lessons & Parties</a></li>
+    <li><a href="corporate.html">Corporate Parties</a></li>
+    <li><a href="brooklyn.html">Brooklyn Outdoor Rink</a></li>
+    <li><a href="contact.html">Social Media & Contact Info</a></li>
+    <li class="nav-cta"><a href="contact.html">Book a Lesson</a></li>
+  </ul>
+</header>
+
+<main class="error-page">
+  <h1>404</h1>
+  <p>Looks like you skated off the map.</p>
+  <a class="btn btn-fill" href="index.html">Back to Home</a>
+</main>
+
+<footer class="site-footer">
+  <p>Blue Skate LLC &middot; 2331 Bergen Avenue, Brooklyn, NY 11234</p>
+  <p><a href="mailto:7blueskate7@gmail.com">7blueskate7@gmail.com</a> &middot; <a href="tel:929-722-5659">(929) 722-5659</a> &middot; <a href="https://blue-skate.com/">blue-skate.com</a></p>
+  <p>&copy; 2026 Blue Skate LLC. All rights reserved.</p>
+</footer>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  })();
+</script>
+</body>
+</html>

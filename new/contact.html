@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact & Social Media | Blue Skate</title>
+  <meta name="description" content="Get in touch with Blue Skate LLC — Instagram, Facebook, email, phone, and location." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="blueskate.css" />
+</head>
+<body>
+
+<header class="topnav">
+  <div class="brand">
+    <img src="images/BlueSkateIcon.jpg" alt="Blue Skate logo" class="nav-logo" />
+    <span class="brand-name">Blue Skate</span>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="lessons.html">Lessons & Parties</a></li>
+    <li><a href="corporate.html">Corporate Parties</a></li>
+    <li><a href="brooklyn.html">Brooklyn Outdoor Rink</a></li>
+    <li><a href="contact.html" class="active">Social Media & Contact Info</a></li>
+  </ul>
+</header>
+
+<div class="page-title">
+  <h1>Let's Get You on Skates</h1>
+  <p>Reach out through any of the channels below — we usually respond within a day.</p>
+</div>
+
+<main>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <span class="label">Email</span>
+      <a class="value" href="mailto:7blueskate7@gmail.com">7blueskate7@gmail.com</a>
+    </div>
+    <div class="contact-card">
+      <span class="label">Website</span>
+      <a class="value" href="https://blue-skate.com/">blue-skate.com</a>
+    </div>
+    <div class="contact-card">
+      <span class="label">Phone</span>
+      <a class="value" href="tel:929-722-5659">(929) 722-5659</a>
+    </div>
+    <div class="contact-card">
+      <span class="label">Address</span>
+      <a class="value" href="https://www.google.com/maps/place/Blue+Skate+LLC/@40.618508,-73.9014358,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25b64d60a204b:0x890b63bea9308411!8m2!3d40.618504!4d-73.8988609!16s%2Fg%2F11qg1kvrn4">2331 Bergen Avenue<br />Brooklyn, NY 11234</a>
+    </div>
+    <div class="contact-card">
+      <span class="label">Instagram</span>
+      <a class="value" href="https://www.instagram.com/blueskate7/">@BlueSkate7</a>
+    </div>
+    <div class="contact-card">
+      <span class="label">Facebook</span>
+      <a class="value" href="https://www.facebook.com/profile.php?id=506149079">David Isaac</a>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top: 40px;">
+    <a class="btn btn-outline" href="mailto:7blueskate7@gmail.com?subject=Booking%20a%20Blue%20Skate%20Lesson">Email Us to Book a Lesson</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Blue Skate LLC &middot; 2331 Bergen Avenue, Brooklyn, NY 11234</p>
+  <p><a href="mailto:7blueskate7@gmail.com">7blueskate7@gmail.com</a> &middot; <a href="tel:929-722-5659">(929) 722-5659</a> &middot; <a href="https://blue-skate.com/">blue-skate.com</a></p>
+  <p>&copy; 2026 Blue Skate LLC. All rights reserved.</p>
+</footer>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  })();
+</script>
+</body>
+</html>

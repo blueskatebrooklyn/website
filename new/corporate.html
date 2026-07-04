@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corporate Parties | Blue Skate</title>
+  <meta name="description" content="Memberships and corporate skate party packages from Blue Skate LLC in Brooklyn, NY." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="blueskate.css" />
+</head>
+<body>
+
+<header class="topnav">
+  <div class="brand">
+    <img src="images/BlueSkateIcon.jpg" alt="Blue Skate logo" class="nav-logo" />
+    <span class="brand-name">Blue Skate</span>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="lessons.html">Lessons & Parties</a></li>
+    <li><a href="corporate.html" class="active">Corporate Parties</a></li>
+    <li><a href="brooklyn.html">Brooklyn Outdoor Rink</a></li>
+    <li><a href="contact.html">Social Media & Contact Info</a></li>
+    <li class="nav-cta"><a href="contact.html">Book a Lesson</a></li>
+  </ul>
+</header>
+
+<div class="page-title">
+  <h1>Corporate Parties</h1>
+  <p>Membership options and corporate event packages — team-building on wheels.</p>
+</div>
+
+<main>
+  <h2 class="section-title">Memberships & Certifications</h2>
+  <p class="section-subtitle">Our instructors are certified and affiliated with these organizations.</p>
+  <div class="logo-wall">
+    <div class="logo-card">
+      <img src="images/logos/redcross.png" alt="American Red Cross" />
+      <span class="logo-caption">American Red Cross</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/skateia.png" alt="Skate Instructors Association — Certified Instructor" />
+      <span class="logo-caption">Skate Instructors Association</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/kiwanis.png" alt="Kiwanis International" />
+      <span class="logo-caption">Kiwanis International</span>
+    </div>
+  </div>
+
+  <h2 class="section-title" style="margin-top:64px;">As Featured & Community Partners</h2>
+  <p class="section-subtitle">Organizations, events, and communities Blue Skate has worked and skated with.</p>
+  <div class="logo-wall logo-wall-dense">
+    <div class="logo-card">
+      <img src="images/logos/nycdoe.png" alt="NYC Department of Education" />
+      <span class="logo-caption">NYC Dept. of Education</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/nycparks.png" alt="NYC Parks" />
+      <span class="logo-caption">NYC Parks</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/skatelove.png" alt="Skate Love Festival, Barcelona" />
+      <span class="logo-caption">Skate Love, Barcelona</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/substanceskatepark.png" alt="Substance Skatepark" />
+      <span class="logo-caption">Substance Skatepark</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/vh1.png" alt="VH1" />
+      <span class="logo-caption">VH1</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/blackinkcrew.png" alt="Black Ink Crew" />
+      <span class="logo-caption">Black Ink Crew</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/chaya.png" alt="Chaya Skates" />
+      <span class="logo-caption">Chaya Skates</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/sweet16.png" alt="Sweet 16 party theme" />
+      <span class="logo-caption">Sweet 16 Parties</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/hiphop.png" alt="Hip Hop party theme" />
+      <span class="logo-caption">Hip Hop Parties</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/ireland.png" alt="Ireland" />
+      <span class="logo-caption">Ireland</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/france.png" alt="France" />
+      <span class="logo-caption">France</span>
+    </div>
+    <div class="logo-card">
+      <img src="images/logos/unitedkingdom.png" alt="United Kingdom" />
+      <span class="logo-caption">United Kingdom</span>
+    </div>
+  </div>
+</main>
+
+<section class="band band-accent">
+  <div class="band-inner" style="text-align:center;">
+    <h2>Plan Your Corporate Event</h2>
+    <p style="color:#dbeefc; max-width:480px; margin:0 auto 24px;">Team-building, holiday parties, and group outings — all on skates.</p>
+    <a class="btn btn-on-color" href="contact.html">Get a Quote</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>Blue Skate LLC &middot; 2331 Bergen Avenue, Brooklyn, NY 11234</p>
+  <p><a href="mailto:7blueskate7@gmail.com">7blueskate7@gmail.com</a> &middot; <a href="tel:929-722-5659">(929) 722-5659</a> &middot; <a href="https://blue-skate.com/">blue-skate.com</a></p>
+  <p>&copy; 2026 Blue Skate LLC. All rights reserved.</p>
+</footer>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  })();
+</script>
+</body>
+</html>
