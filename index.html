@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blue Skate | Roller Skating Lessons & Mentorship in Brooklyn, NY</title>
-  <meta name="description" content="Blue Skate LLC offers roller skating lessons, parties, and youth mentorship in Brooklyn, NY, led by David Isaac." />
+  <title>Blue Skate | Roller Skating Lessons, Incentives & Life Coaches Across All 5 Boroughs, NYC</title>
+  <meta name="description" content="Blue Skate LLC offers roller skating lessons, parties, and youth incentives with life coaches across all 5 boroughs of New York City, led by David Isaac." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap" rel="stylesheet" />
@@ -23,8 +23,9 @@
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="lessons.html">Lessons & Parties</a></li>
+    <li><a href="internship-program.html">Internship Program</a></li>
     <li><a href="corporate.html">Corporate Parties</a></li>
-    <li><a href="brooklyn.html">Brooklyn Outdoor Rink</a></li>
+    <li><a href="brooklyn-outdoor-rink.html">Brooklyn Outdoor Rink</a></li>
     <li><a href="contact.html">Social Media & Contact Info</a></li>
     <li class="nav-cta"><a href="contact.html">Book a Lesson</a></li>
   </ul>
@@ -32,32 +33,70 @@
 
 <section class="hero">
   <div class="hero-copy">
-    <span class="hero-tag">Brooklyn, NY</span>
-    <h1>Roll up, fall down,<br /><span class="accent-text">get back up.</span></h1>
-    <p class="lede">Roller skating lessons, parties, and youth mentorship led by David Isaac — 35+ years of building confidence on wheels.</p>
+    <span class="hero-tag">All 5 Boroughs, NYC</span>
+    <h1>More Than Roller Skating.</h1>
+    <p class="hero-subtitle">Building confidence, community, and character—one skater at a time.</p>
+    <p class="lede">Roller skating lessons, unforgettable parties, and youth incentives with life coaches led by David Isaac, with over 35 years of experience inspiring skaters of all ages.</p>
     <div class="hero-actions">
       <a class="btn btn-fill" href="contact.html">Book a Lesson</a>
-      <a class="btn btn-outline" href="lessons.html">See Lessons</a>
+      <a class="btn btn-outline" href="lessons.html">Explore Programs</a>
     </div>
   </div>
   <div class="hero-art">
     <span class="dot dot-1"></span>
     <span class="dot dot-2"></span>
-    <img src="images/SkateLessons.jpg" alt="Skate lesson at Blue Skate" />
+    <canvas class="mascot-hero" id="mascotCanvas" aria-label="Blue Skate mascot turning around on skates — tap to hear sound"></canvas>
+    <video class="mascot-source" id="mascotSource" muted loop playsinline preload="auto">
+      <source src="vids/mascot-turn-sound.mp4" type="video/mp4">
+    </video>
+    <span class="mascot-sound-hint">🔊 Tap for sound</span>
+  </div>
+</section>
+
+<section class="band" style="background:var(--white);">
+  <div class="band-inner">
+    <h2 class="section-title reveal">Explore what Blue Skate offers</h2>
+    <p class="section-subtitle reveal reveal-d1">Curious how Blue Skate's incentive programs work — alongside our lessons, events, and partnerships? Here's the full picture.</p>
+    <div class="resource-grid">
+      <div class="resource-card reveal">
+        <div class="brochure-preview">
+          <a href="images/BROCHURE%202.jpeg" target="_blank" rel="noopener" aria-label="Open brochure — mission and programs panel">
+            <img src="images/BROCHURE%202.jpeg" alt="Blue Skate brochure — mission and programs panel" />
+          </a>
+          <a href="images/BROCHURE.jpeg" target="_blank" rel="noopener" aria-label="Open brochure — partnerships and contact panel">
+            <img src="images/BROCHURE.jpeg" alt="Blue Skate brochure — partnerships and contact panel" />
+          </a>
+        </div>
+        <h3>Get the Full Story</h3>
+        <p>35+ years teaching, NYCDOE-authorized internships, global recognition, and a mission built on confidence and community — it's all in our brochure. Tap either panel to zoom in.</p>
+        <div class="resource-actions">
+          <a class="btn btn-fill" href="images/BROCHURE%202.jpeg" target="_blank" rel="noopener">Our Mission &amp; Programs</a>
+          <a class="btn btn-outline" href="images/BROCHURE.jpeg" target="_blank" rel="noopener">Partnerships &amp; Contact</a>
+        </div>
+      </div>
+      <div class="resource-card reveal reveal-d2">
+        <img src="images/presentation-cover.jpg" alt="Blue Skate presentation cover slide" />
+        <h3>See It In Action</h3>
+        <p>Want the deep dive? Our full 30-slide presentation walks through who we are, what we've built, and where we're headed next.</p>
+        <div class="resource-actions">
+          <a class="btn btn-fill" href="docs/blue-skate-presentation.pdf" target="_blank" rel="noopener">View Presentation (PDF)</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="band band-sky">
   <div class="band-inner stats-row">
-    <div class="stat">
+    <div class="stat reveal">
       <span class="stat-num">35+</span>
       <span class="stat-label">Years Teaching</span>
     </div>
-    <div class="stat">
+    <div class="stat reveal reveal-d2">
       <span class="stat-num">5</span>
       <span class="stat-label">Community Partners</span>
     </div>
-    <div class="stat">
+    <div class="stat reveal reveal-d3">
       <span class="stat-num">Global</span>
       <span class="stat-label">Skate Workshops</span>
     </div>
@@ -65,37 +104,82 @@
 </section>
 
 <main>
-  <h2 class="section-title">Meet David Isaac</h2>
-  <p class="section-subtitle">CEO/President, Blue Skate LLC & Blue Skate Youth Development Foundation</p>
+  <h2 class="section-title reveal">Meet David Isaac</h2>
+  <p class="section-subtitle reveal reveal-d1">CEO/President, Blue Skate LLC & Blue Skate Youth Development Foundation</p>
 
-  <div class="content-block">
+  <div class="content-block reveal reveal-d2">
     <p>David has spent over 35 years teaching roller skating — building confidence, community, and lifelong skills for skaters of every age. He's taught hundreds of students around the world, including at the Skate Love Festival 2021 in Barcelona, and brings 25+ years of tech industry experience to how he runs Blue Skate.</p>
-    <p>Blue Skate LLC partners with NYCDOE, NYC Parks, Millennium Development, Chaya Skates, and Substance Skatepark to mentor youth — pairing skating skills with life skills like resilience, safety, and getting back up after a fall.</p>
+    <p>Blue Skate LLC partners with NYCDOE, NYC Parks, Millennium Development, Chaya Skates, and Substance Skatepark to coach youth — pairing skating skills with life skills like resilience, safety, and getting back up after a fall.</p>
   </div>
 
-  <div class="chip-row">
-    <span class="chip">NYCDOE Mentorship Partner</span>
+  <div class="chip-row reveal reveal-d3">
+    <span class="chip">NYCDOE Internship & Incentives Partner</span>
     <span class="chip">Kiwanis International</span>
     <span class="chip">Skate Instructors Association</span>
     <span class="chip">Skate Love Festival, Barcelona 2021</span>
   </div>
 
-  <div class="photo-pair">
-    <img src="images/brooksbrothers.jpg" alt="Blue Skate community event" />
-    <img src="images/lessons.jpg" alt="Blue Skate lesson session" />
+  <div class="photo-pair photo-uneven reveal">
+    <img src="images/david-skate-kick.png" alt="David Isaac roller skating in a suit by the Brooklyn waterfront" />
+    <img src="images/lesson-group.png" alt="David Isaac coaching skaters at an indoor rink" />
   </div>
 </main>
 
+<section class="band band-sky">
+  <div class="band-inner">
+    <h2 class="section-title reveal">Watch Blue Skate in Motion</h2>
+    <p class="section-subtitle reveal reveal-d1">Highlights from our recent skating events.</p>
+
+    <div class="video-grid">
+      <div class="video-card reveal">
+        <video src="videos/blue-skate-3-day-event.mp4" controls preload="metadata"></video>
+        <div class="video-card-caption">
+          <h3>Three Days of Growth, Confidence, and Unforgettable Memories</h3>
+          <p>Experience three exciting days where children and families learn new skating skills, build confidence, and create lasting friendships. Through expert instruction and a fun, supportive environment, Blue Skate helps every participant grow both on and off the rink.</p>
+          <p>Blue Skate also rewards students for doing well in school by offering incentives that encourage academic excellence. Open to students from kindergarten through high school, the program inspires kids to succeed in the classroom while having fun on skates.</p>
+        </div>
+      </div>
+      <div class="video-card reveal reveal-d2">
+        <video src="videos/BLUESKATE1.mp4" controls preload="metadata"></video>
+        <div class="video-card-caption">
+          <h3>100+ Skaters, One Big Turnout</h3>
+          <p>More than 100 people came out for a Blue Skate community roll near Barclays Center — proof that skating brings the whole neighborhood together.</p>
+        </div>
+      </div>
+      <div class="video-card reveal reveal-d3">
+        <video src="videos/blue-skate-community.mp4" controls preload="metadata"></video>
+        <div class="video-card-caption">
+          <h3>More Than a Skating Event—A Community in Motion</h3>
+          <p>Blue Skate is more than learning to skate. It's about bringing families, neighbors, and communities together through movement, laughter, and shared experiences. Our events create a welcoming space where people of all ages can connect, celebrate, and enjoy the positive impact of an active and united community.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="background:var(--white);">
+  <div class="band-inner">
+    <div class="event-flyer reveal">
+      <span class="event-eyebrow">Community Board 18 Presents</span>
+      <h2 class="event-title">A Free Family Skate Night &amp; BBQ</h2>
+      <p class="event-date">Friday, June 26, 2026</p>
+      <p class="event-location">Millennium Development &ndash; JM Community Center<br />2331 Bergen Avenue, Brooklyn, NY 11234</p>
+      <p class="event-note">Free for the whole family — sessions, food, and safety gear. Registration required.</p>
+      <a class="btn btn-fill" href="brooklyn-outdoor-rink.html" style="margin-top:12px;">See Full Event Details</a>
+    </div>
+  </div>
+</section>
+
 <section class="band band-navy">
-  <div class="band-inner" style="text-align:center;">
+  <div class="band-inner reveal" style="text-align:center;">
     <h2>Ready to Skate with Us?</h2>
-    <p style="color:#cfe0f2; max-width:480px; margin:0 auto 24px;">Lessons, parties, and mentorship for all ages. Let's get you on skates.</p>
+    <p style="color:#cfe0f2; max-width:480px; margin:0 auto 24px;">Lessons, parties, incentives, and life coaches for all ages. Let's get you on skates.</p>
     <a class="btn btn-on-color" href="contact.html">Book a Lesson</a>
   </div>
 </section>
 
 <footer class="site-footer">
-  <p>Blue Skate LLC &middot; 2331 Bergen Avenue, Brooklyn, NY 11234</p>
+  <p>Blue Skate LLC &middot; 724 E 27th St, Brooklyn, NY 11210</p>
   <p><a href="mailto:7blueskate7@gmail.com">7blueskate7@gmail.com</a> &middot; <a href="tel:929-722-5659">(929) 722-5659</a> &middot; <a href="https://blue-skate.com/">blue-skate.com</a></p>
   <p>&copy; 2026 Blue Skate LLC. All rights reserved.</p>
 </footer>
@@ -107,6 +191,45 @@
     toggle.addEventListener('click', function () {
       var isOpen = links.classList.toggle('open');
       toggle.setAttribute('aria-expanded', isOpen);
+    });
+  })();
+</script>
+<script src="js/reveal.js" defer></script>
+<script>
+  (function () {
+    var video = document.getElementById('mascotSource');
+    var canvas = document.getElementById('mascotCanvas');
+    if (!video || !canvas) return;
+    var ctx = canvas.getContext('2d', { willReadFrequently: true });
+    var W = 640, H = 800;
+    canvas.width = W;
+    canvas.height = H;
+
+    function keyFrame() {
+      if (video.readyState >= 2) {
+        ctx.drawImage(video, 0, 0, W, H);
+        var frame = ctx.getImageData(0, 0, W, H);
+        var d = frame.data;
+        for (var i = 0; i < d.length; i += 4) {
+          var r = d[i], g = d[i + 1], b = d[i + 2];
+          var dist = Math.sqrt((255 - r) * (255 - r) + (255 - g) * (255 - g) + (255 - b) * (255 - b));
+          if (dist < 36) {
+            d[i + 3] = 0;
+          } else if (dist < 95) {
+            d[i + 3] = Math.round(255 * (dist - 36) / 59);
+          }
+        }
+        ctx.putImageData(frame, 0, 0);
+      }
+      requestAnimationFrame(keyFrame);
+    }
+
+    video.play().catch(function () {});
+    requestAnimationFrame(keyFrame);
+
+    canvas.addEventListener('click', function () {
+      video.muted = !video.muted;
+      if (video.paused) { video.play(); }
     });
   })();
 </script>
