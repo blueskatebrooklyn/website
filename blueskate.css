@@ -1017,6 +1017,56 @@ main {
   grid-column: 1 / -1;
 }
 
+/* ---------- Flyer gallery (uniform, proportioned cards) ---------- */
+
+.flyer-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.flyer-gallery figure {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 460px;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: var(--white);
+  border: 1px solid rgba(0, 51, 102, 0.1);
+  box-shadow: 0 10px 24px -16px rgba(0, 51, 102, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.flyer-gallery figure:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 32px -16px rgba(0, 51, 102, 0.32);
+}
+
+.flyer-gallery img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: calc(var(--radius) - 6px);
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .flyer-gallery {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+
+  .flyer-gallery figure {
+    height: 420px;
+  }
+}
+
 /* Bento variant — big on top, smaller below, still uncropped */
 .gallery-bento {
   display: grid;
