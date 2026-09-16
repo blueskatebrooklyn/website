@@ -197,12 +197,37 @@
 <script src="js/reveal.js" defer></script>
 <script>
   (function () {
-    var video = document.getElementById('mascotVideo');
-    if (!video) return;
+    var video = document.getElementById('mascotSource');
+    var canvas = document.getElementById('mascotCanvas');
+    if (!video || !canvas) return;
+    var ctx = canvas.getContext('2d', { willReadFrequently: true });
+    var W = 640, H = 800;
+    canvas.width = W;
+    canvas.height = H;
+
+    function keyFrame() {
+      if (video.readyState >= 2) {
+        ctx.drawImage(video, 0, 0, W, H);
+        var frame = ctx.getImageData(0, 0, W, H);
+        var d = frame.data;
+        for (var i = 0; i < d.length; i += 4) {
+          var r = d[i], g = d[i + 1], b = d[i + 2];
+          var dist = Math.sqrt((255 - r) * (255 - r) + (255 - g) * (255 - g) + (255 - b) * (255 - b));
+          if (dist < 36) {
+            d[i + 3] = 0;
+          } else if (dist < 95) {
+            d[i + 3] = Math.round(255 * (dist - 36) / 59);
+          }
+        }
+        ctx.putImageData(frame, 0, 0);
+      }
+      requestAnimationFrame(keyFrame);
+    }
 
     video.play().catch(function () {});
+    requestAnimationFrame(keyFrame);
 
-    video.addEventListener('click', function () {
+    canvas.addEventListener('click', function () {
       video.muted = !video.muted;
       if (video.paused) { video.play(); }
     });
